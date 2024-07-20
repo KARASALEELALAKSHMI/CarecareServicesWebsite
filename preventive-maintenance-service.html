@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Preventive</title>
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/services.css">
+    <link rel="stylesheet" href="css/body-repair-service.css">
+    <script src="js\logout.js"></script>
+</head>
+<body>
+    <header>
+        <nav id="navbar">
+            <a href="tel:+916309701082">Call</a>
+            <a href="mailto:leelalakshmikarasa979@gmail.com">contact@automob.co.in</a>
+            <a href="#" onclick="logout()">Logout</a>
+            <a href="booking.html">Booking</a><a href="services.html">Services</a>
+            <a href="index.html">Home</a>
+            <a href="#"><script>
+                const d=localStorage.getItem("user")
+                if(d=="Leelalakshmi"){
+                    document.write("Hi...Admin");
+                }
+                else{
+                document.write(`Hi...${d}`);
+                }
+            </script></a>
+            <a href="index.html" style="float: left;"><i class="fa fa-car"></i>AutoMob-Mechanic</a> 
+        </nav>
+        </header>
+    <div class="box1">
+        <div class="divs12" style="background-image: url(Images/preventive-measures.jpg);"></div>
+        <div class="divs2"><nav><a href="home.html" style="color:darkblue">Home</a> / <a href="services.html" style="color:darkblue">Services</a> / <a href="body-repair-service.html" style="color:darkblue">Body-Repair</a></nav>
+    <h2>Preventive-Maintenance</h2>
+    <p style="color: crimson;">Save 35%</p>
+    <p>Looking to keep your car functioning smoothly?Save memory and opt for AutoMob-Mechanic's periodie maintance service This service aims at:</p>
+        <ul>
+            <li>Air filters replacement</li>
+            <li>Engine oil replacement</li>
+            <li>Break cleaning</li>
+        </ul>
+        <p><b>Offer Price:</b><s>&#x20B9;15,000</s><span style="color: crimson;">&#x20B9;9,750</span></p>
+    <a href="booking.html" class="float1"><button id="bx2">Service</button></a></div>
+    </div>
+</body>
+<footer>Copyright 2023 AutoMob-Mechanic.All Rights Reserved</footer>
+</html>

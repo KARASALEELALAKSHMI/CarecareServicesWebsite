@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css\home.css">
+    <title>login</title>
+    <style>
+        body{
+            background-image:url("Images/home5.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        #fr{
+            margin-left: 250px;
+            margin-top: 100px;
+        }
+    </style>
+</head>
+<body class="slide">
+   <header>
+        <nav id="navbar">
+            <a href="tel:+916309701082">Call</a>
+            <a href="mailto:leelalakshmikarasa979@gmail.com">contact@automob.co.in</a>
+            <a href="services1.html">Services</a>
+            <a href="index.html">Home</a>
+            <a href="index.html" style="float: left;"><i class="fa fa-car"></i>AutoMob-Mechanic</a> 
+            <link rel="stylesheet" href="css\home.css">
+            <link rel="stylesheet" href="css\services.css">
+            <link rel="stylesheet" href="css\body-repair-service.css">
+        </nav>
+    </header>
+    <main><div id="fr">
+        <h2>Login</h2>
+        <form id="Login">
+            <div>
+                <label for="uname">Username:</label>
+                <input type="text" id="uname" required>
+            </div>
+            <div>
+                <label for="pwd">Password:</label>
+                <input type="password" id="pwd" required>
+            </div>
+            <br>
+            <div>
+                <button type="submit">Login</button>
+            </div>
+            <br><br>
+        </form>
+        <script>
+            document.getElementById("Login").addEventListener("submit",function(event){
+            event.preventDefault();// Prevent form submission
+            // Get input values
+            var username=document.getElementById("uname").value;
+            var password=document.getElementById("pwd").value;
+            // Get saved user data from localStorage
+            var saveduserdata=JSON.parse(localStorage.getItem("uData"));
+            // Check if user exists and password matches
+            if(saveduserdata&&saveduserdata.username===username&&saveduserdata.password===password){
+                // Redirect to main.html
+                localStorage.setItem('user',username);
+                window.location.href="services.html"; 
+            }
+            else{
+                // Show alert for invalid data
+                alert("Invalid username or password please try again")
+            }
+        });
+        </script>
+        <p>If you are new to login click on  <a href="SignUp.html" id="sign">Sign Up</a></p></div>
+    </main>
+    <footer>Copyright@2023AutoMob-Mechanic.All Rights Reserved.</footer>
+</body>
+</html>

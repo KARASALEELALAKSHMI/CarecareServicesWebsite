@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/appointment.css">
+    <link rel="stylesheet" href="css\body-repair-service.css">
+    <script src="js\logout.js"></script>
+    <title>Car-Care</title>
+</head>
+<body>
+    <header>
+        <nav id="navbar">
+            <a href="tel:+916309701082">Call</a>
+            <a href="mailto:leelalakshmikarasa979@gmail.com">contact@automob.co.in</a>
+            <a href="#" onclick="logout()">Logout</a>
+            <a href="booking.html">Booking</a><a href="services.html">Services</a>
+            <a href="index.html">Home</a>
+            <a href="#"><script>
+                const d=localStorage.getItem("user")
+                if(d=="Leelalakshmi"){
+                    document.write("Hi...Admin");
+                }
+                else{
+                document.write(`Hi...${d}`);
+                }
+                </script></a>
+            <a href="index.html" style="float: left;"><i class="fa fa-car"></i>AutoMob-Mechanic</a> 
+        </nav>
+        </header>
+    <div class="box1">
+        <div class="divs13" style=" background-image: url(Images/car-care-service.jpg);"></div>
+        <div class="divs2"><nav><a href="index.html" style="color:darkblue">Home</a> / <a href="services.html" style="color:darkblue">Services</a> / <a href="preventive-maintenance-service.html" style="color:darkblue">Preventive-Maintenance</a></nav>
+    <h2>Car Care Service</h2>
+    <p>Looking to keep your car neat and clean?Save memory and opt for AutoMob-Mechanic's car care service We offer an extensive range of car wash and cleaning services such as:</p>
+    <p style="color: crimson;">Save 15%</p>
+    <ul>
+        <li>Basic car washing and Vacuuming.</li>
+        <li>Detailed interior and upholstery cleaning.</li>
+        <li>Protective coating.</li>
+        <li>Dashboard polishing.</li>
+    </ul>
+    <p><b>Offer Price:</b><s>&#x20B9;8,000</s><span style="color: crimson;">&#x20B9;6,800</span></p>
+    <a href="booking.html" class="float1"><button id="bx2">Service</button></a></div>
+    </div>
+</body>
+<footer><br/>Copyright 2023 AutoMob-Mechanic.All Rights Reserved</footer>
+</html>

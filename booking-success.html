@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="js\logout.js"></script>
+    <title>BookingSucess</title>
+    <style>
+        .imgcen{
+            margin:5%;
+            margin-top: 10%;
+            float: left; /* Float the boxes to the left */
+    display: flex;
+    box-sizing:border-box
+        }
+        .box2 {
+    width: 410px; /* Change the width as needed */
+    height: 400px; /* Change the height as needed */
+   margin: 70px; /* Adjust the margin as needed */
+    float: left; /* Float the boxes to the left */
+    display: flex;
+    box-sizing:border-box/* Include padding and border in the box's total width and height */
+    #div1{
+        margin:75px;
+    }
+    p{
+        font-size:20px;
+    }
+  }
+    </style>
+</head>
+<body>
+    <header>
+        <nav id="navbar">
+            <a href="tel:+916309701082">Call</a>
+            <a href="mailto:leelalakshmikarasa979@gmail.com">contact@automob.co.in</a>
+            <a href="#" onclick="logout()">Logout</a>
+            <a href="booking.html">Booking</a><a href="services.html">Services</a>
+            <a href="index.html">Home</a>
+            <a href="#"><script>
+                const d=localStorage.getItem("user")
+                if(d=="Leelalakshmi"){
+                    document.write("Hi...Admin");
+                }
+                else{
+                document.write(`Hi...${d}`);
+                }
+            </script></a>
+            <a href="index.html" style="float: left;"><i class="fa fa-car"></i>AutoMob-Mechanic</a> 
+            <link rel="stylesheet" href="css\home.css">
+        </nav>
+        <div class="imgcen"><img src="Images\thank-you.jpg" height="300" width="600"></div>
+        <div class="box2"><div id="div1"><h1>Your Booking is Confirmed</h1><i class="fa fa-thumbs-up" aria-hidden="true"></i>
+            <p>We will get back to you soon with the details vis email/phone</p><br>
+            <p>For any reason,want to re-schedule/cancel it?</p>
+            <p>Please drop us a note contact@automob.co.in</p><br>
+            <p>Cheers,</p><p>The Automob-Mechanic Team</p>
+</div></div>
+</body>
+<footer>Copyright 2023 AutoMob-Mechanic.All Rights Reserved</footer>
+</html>

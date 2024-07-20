@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js\logout.js"></script>
+    <script src="js\userauthentification.js"></script>
+    <title>appointment</title>
+</head>
+<body>
+    <header>
+        <nav id="navbar">
+                <a href="tel:+916309701082">Call</a>
+                <a href="mailto:leelalakshmikarasa979@gmail.com">contact@automob.co.in</a>
+                <a href="#" onclick="logout()">Logout</a>
+                <a href="booking.html">Booking</a><a href="services.html">Services</a>
+                <a href="index.html">Home</a>
+                <a href="#">
+                    <script>const d=localStorage.getItem("user")
+                        if(d=="Leelalakshmi"){
+                        document.write("Hi...Admin");
+                        }
+                        else{
+                        document.write(`Hi...${d}`);
+                        }</script>
+                </a>
+                <a href="index.html" style="float: left;"><i class="fa fa-car"></i>AutoMob-Mechanic</a> 
+                <link rel="stylesheet" href="css\home.css">
+                <link rel="stylesheet" href="css\appointment.css">
+            </nav>
+        </header>
+    <div class="box1" style="background-color: rgb(186, 186, 198);">
+        <div id="login-box1" style="background-color: rgb(186, 186, 198);">
+            <h2 id="h2a">Appointment</h2>
+            <form>
+                <div class="leftbox">
+        <input class="frm" type="date" placeholder="Appointment Date:" style="background-color: rgb(186, 186, 198);">
+        <input class="frm" name="address" id="address"  required placeholder="Address:" style="background-color: rgb(186, 186, 198);"></textarea>
+        <input class="frm" type="text" required placeholder="City:" style="background-color: rgb(186, 186, 198);">
+        <input class="frm" list="States" placeholder="State:" style="background-color: rgb(186, 186, 198);">
+                <datalist id="States">
+                    <option value="Assam">Assam </option>
+                    <option value="Mumbai">Mumbai</option>
+                    <option value="Andhrapradesh" selected>Andhrapradesh</option>
+                    <option value="Chennai">Chennai</option> 
+                    <option value="Telangana">Telangana</option>  
+                    <option value="Odissa">Odissa</option>      
+                </datalist>
+        <label for="notification">Send notification:</label>
+        <input type="checkbox" value="Email" style="background-color: rgb(163, 163, 207);">Email
+        <input type="checkbox" value="Sms" style="background-color: rgb(112, 112, 234);">SMS<br><br>
+        <input type="submit" value="Book" formaction="booking-success.html">
+        </div>
+        </form>
+        </div>
+    </div>
+    <div class="box2" style="background-image: url(Images/schedule_appointment.jpg);"><div class="b2">
+  </div></div>
+    <footer>Copyright@2023AutoMob-Mechanic.All Rights Reserved.</footer>
+</body>
+</html>

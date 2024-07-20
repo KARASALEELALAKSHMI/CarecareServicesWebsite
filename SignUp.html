@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css\home.css">
+    <script src="../js/main.js"></script>
+    <title>Sign-up| AutoMob-Mechanic</title>
+    <style>
+        body{
+            background-image:url("Images/home4.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        button:hover{
+            opacity: 0.6;
+        }
+        button{
+            cursor: pointer;
+        }
+        #fr{
+            margin-left: 250px;
+            margin-top: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <body class="slide">
+        <header>
+         <nav id="navbar">
+                 <a href="tel:+916309701082">Call</a>
+                 <a href="mailto:leelalakshmikarasa979@gmail.com">contact@automob.co.in</a>
+                 <a href="services1.html">Services</a>
+                 <a href="index.html">Home</a>
+                 <a href="index.html" style="float: left;"><i class="fa fa-car"></i>AutoMob-Mechanic</a> 
+             </nav>
+         </header>
+    <main><div id="fr">
+        <h2>Sign-up</h2>
+        <form id="Sign-up">
+            <div>
+                <tr<label for="uname">Username:</label>
+                <input type="text" id="uname" required>
+            </div>
+            <div>
+                <label for="pwd">Set Password:</label>
+                <input type="password" id="pwd" required>
+            </div>
+            <br>
+            <div>
+                <button type="submit">Sign-up</button>
+            </div>
+            <br><br>
+        </form>
+        <script>
+            document.getElementById("Sign-up").addEventListener("submit",function(event){
+                event.preventDefault();
+                var username=document.getElementById("uname").value;
+                var password=document.getElementById("pwd").value;
+                var uData = { username: username, password: password };
+            localStorage.setItem("uData", JSON.stringify(uData));
+            // Redirect to login.html
+            window.location.href="login1.html";
+            });
+        </script></div>
+    </main>
+    <footer>
+        <span>Copyright &copy; 2020 AutoMob-Mechanic.</span>&nbsp;
+        <span>All Rights Reserved.</span>
+    </footer>
+</body>
+
+</html>

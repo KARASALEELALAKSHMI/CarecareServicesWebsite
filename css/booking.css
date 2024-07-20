@@ -1,0 +1,71 @@
+.frm:focus {
+  outline: none;
+  border-bottom:2px solid blue;
+}
+#h2a{
+  text-align: center;
+}
+.box1 {
+position: relative;
+  margin-left: 50px;
+  margin-top: 10px;
+  width: 600px;
+  height: 440px;
+  background: #fffdfd;
+  border-radius: 2px;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.4);
+  float: left; /* Float the boxes to the left */
+}
+.box2 {
+  width: 400px; /* Change the width as needed */
+  height: 400px; /* Change the height as needed */
+  border: 1px solid rgb(204, 204, 237);
+  border-radius: 50%;
+ /*Change the background color as needed */
+ background-size:100% 100%;
+  background-repeat: no-repeat;
+ margin: 80px; 
+ margin-top: 10px;/* Adjust the margin as needed */
+  float: left; /* Float the boxes to the left */
+  display: flex;
+  box-sizing:border-box/* Include padding and border in the box's total width and height */
+}
+.leftbox {
+  position: absolute;
+  top: 0;
+  left: 0;
+  box-sizing: border-box;
+  padding: 60px;
+  width: 500px;
+  height: 300px;
+ 
+}
+.frm{
+  display: block;
+box-sizing: border-box;
+margin-bottom: 12px;
+padding: 4px;
+width: 500px;
+height: 22px;
+border: none;
+border-bottom: 1px solid #473939;
+font-weight: 400;
+font-size: 13px;
+}
+#pp{
+    font-size: 16px;
+    margin-top: 65%;
+    text-align: center;
+}
+input[type="submit"] {
+  margin-top:1px;
+  width: 200px;
+  height: 32px;
+  background: #d45637;
+  border: none;
+  border-radius: 2px;
+  color: #FFF;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  cursor: pointer;
+}

@@ -1,0 +1,57 @@
+#serh{
+    font-size: 35px;
+    text-align:center;
+}
+.serp{
+    font-size: 20px;
+    text-align: center
+}
+.cl1{
+    color:black;
+}
+.cl2{
+    color:rgb(195, 40, 117);
+}
+.box {
+    width: 290px; /* Change the width as needed */
+    height: 260px; /* Change the height as needed */
+    border: 1px solid rgb(204, 204, 237);
+    border-radius: 10%;
+   /*Change the background color as needed */
+    margin: 55px; /* Adjust the margin as needed */
+    float: left; /* Float the boxes to the left */
+    display: flex;
+    box-sizing:border-box/* Include padding and border in the box's total width and height */
+  }
+  .box:hover {
+    box-shadow: 0 8px 16px 1px rgb(72, 71, 71);
+  }
+  .b1{
+      width:288px;
+      height:180px;
+      border: 1px solid rgb(204, 204, 237);
+      border-radius:11% 11% 0 0;
+    background-size:100% 100%;
+    background-repeat: no-repeat;
+  }
+  .b2{
+      width:288px;
+      height:180px;
+      border: 1px solid rgb(204, 204, 237);
+      border-radius:11% 11% 0 0;
+    background-size:100% 100%;
+    background-repeat: no-repeat;
+  }
+  .b3{
+      width:288px;
+      height:180px;
+      border: 1px solid rgb(204, 204, 237);
+      border-radius:11% 11% 0 0;
+    background-size:100% 100%;
+    background-repeat: no-repeat;
+  }
+  #pp{
+      font-size: 16px;
+      margin-top: 65%;
+      text-align: center;
+  }

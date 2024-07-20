@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <script src="js\logout.js"></script>
+    <title>Service</title>
+</head>
+<body>
+    <header>
+        <nav id="navbar">
+                <a href="tel:+916309701082">Call</a>
+                <a href="mailto:leelalakshmikarasa979@gmail.com">contact@automob.co.in</a>
+                <a href="#" onclick="logout()">Logout</a>
+                <a href="booking.html">Booking</a><a href="services.html">Services</a>
+                <a href="index.html">Home</a>
+                <a href="#">
+                <script>
+                    const d=localStorage.getItem("user")
+                    if(d=="Leelalakshmi"){
+                        document.write("Hi...Admin");
+                    }
+                    else{
+                    document.write(`Hi...${d}`);
+                    }
+          </script>
+          </a>
+                <a href="index.html" style="float: left;"><i class="fa fa-car"></i>AutoMob-Mechanic</a> 
+                <link rel="stylesheet" href="css/home.css">
+                <link rel="stylesheet" href="css/services.css">
+            </nav>
+        </header>
+    <h2 id="serh"><span class="cl1">Our</span>&nbsp;&nbsp;<span class="cl2">Services</span></h2>
+    <p class="serp">Our representatives are professionaly trained and skilled with latest and futursitic techniques to provide a best quality service.</p>
+    <p class="serp">We provide a high class service to the customers for their happy and memorable driving experience.</p>
+    <a href="preventive-maintenance-service.html" style="color: blue;"><div class="box"><div class="b1" style="background-image: url(Images/preventive-maintenance.jpg);"><P id="pp"><strong>Preventive Maintenace<br></strong>Periodically check and keep your car running</P>
+    </div></div></a>
+    <a href="body-repair-service.html" style="color: blue;"><div class="box"><div class="b2" style="background-image: url(Images/body-repair.jpg);">
+      <P id="pp"><strong>Body Repair<br></strong>Full chasis body repair provided by the experts</P>
+  </div></div></a>
+    <a href="car-care-service.html" style="color: blue;"><div class="box"><div class="b3" style=" background-image: url(Images/car-care.jpg);">
+      <P id="pp"><strong>Car care<br></strong>Get your car sparking clean in just minutes</P>
+  </div></div></a>
+    <footer>Copyright@2023AutoMob-Mechanic.All Rights Reserved.</footer>
+</body>
+</html>

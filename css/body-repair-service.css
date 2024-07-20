@@ -1,0 +1,57 @@
+.box1{
+    background-color:#fffdfd;
+    width: 80%;
+    height: 70%;
+    border:1px solid cadetblue;
+    margin: 70px 70px 120px 140px;
+}
+.divs11{
+    width: 335px; /* Change the width as needed */
+    height: 335px; /* Change the height as needed */
+    margin: 40px;
+     /* Adjust the margin as needed */
+    background-size:cover;
+    background-repeat: no-repeat;
+    float: left; /* Float the boxes to the left */
+    display: flex;
+    box-sizing:border-box;
+}
+.divs12{
+    width: 335px; /* Change the width as needed */
+    height: 335px; /* Change the height as needed */
+    margin: 40px;
+     /* Adjust the margin as needed */
+    background-size:cover;
+    background-repeat: no-repeat;
+    float: left; /* Float the boxes to the left */
+    display: flex;
+    box-sizing:border-box;
+}
+.divs13{
+    width: 335px; /* Change the width as needed */
+    height: 335px; /* Change the height as needed */
+    margin: 40px;
+     /* Adjust the margin as needed */
+    background-size:cover;
+    background-repeat: no-repeat;
+    float: left; /* Float the boxes to the left */
+    display: flex;
+    box-sizing:border-box;
+}
+.divs2{
+    margin:35px;
+}
+#bx2{
+    position:absolute;
+    background-color:rgb(183, 32, 32);
+    border: 1px solid rgb(183, 32, 32);
+    border-radius: 10px;
+    color: white;
+    width: 150px;
+    height: 40px;
+    padding: 10px;
+    text-align: center;
+}
+#bx2:hover{
+    opacity: 0.5;
+}

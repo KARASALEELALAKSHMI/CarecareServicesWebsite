@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js\logout.js"></script>
+    <title>Booking</title>
+</head>
+<body>
+    <header>
+        <nav id="navbar">
+            <a href="tel:+916309701082">Call</a>
+            <a href="mailto:leelalakshmikarasa979@gmail.com">contact@automob.co.in</a>
+            <a href="#" onclick="logout()">Logout</a>
+            <a href="booking.html">Booking</a><a href="services.html">Services</a>
+            <a href="index.html">Home</a>
+            <a href="#"><script>
+                const d=localStorage.getItem("user")
+                if(d=="Leelalakshmi"){
+                    document.write("Hi...Admin");
+                }
+                else{
+                document.write(`Hi...${d}`);
+                }
+            </script></a>
+            <a href="index.html" style="float: left;"><i class="fa fa-car"></i>AutoMob-Mechanic</a> 
+            <link rel="stylesheet" href="css\home.css">
+            <link rel="stylesheet" href="css\appointment.css">
+            <link rel="stylesheet" href="css\booking.css">
+        </nav>
+        <h1 style="text-align: center;"><span style="color: black;">Book</span><span style="color: palevioletred;">Your</span><span style="color: black;">Service</span></h1>
+    <div class="box1" style="background-color: rgb(186, 186, 198);">
+<div id="login-box">
+    <h2 id="h2a">Booking</h2>
+    <form>
+    <div class="leftbox">
+        <input class="frm" type="text" id="name" pattern="[A-Za-z]+ [A-Za-z]+" placeholder="Enter Name(format:surname lastname)" required style="background-color: rgb(186, 186, 198);" >
+        <input class="frm" type="email" id="Email" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}" placeholder="Email (xyz@abc.com)" required style="background-color: rgb(186, 186, 198);">
+        <select class="frm" style="background-color: rgb(186, 186, 198);">
+            <option value="code" selected>Phone Code </option>
+            <option value="+213">+213 </option>
+            <option value="+91">+91 </option>
+            <option value="+244">+244</option>
+            <option value="+61">+61</option>                
+        </select>
+    <input class="frm" type="tel"  id="phn" name="phn" pattern="[0-9]{10}" placeholder="Enter phone no:" required style="background-color: rgb(186, 186, 198);">
+        <select class="frm" style="background-color: rgb(186, 186, 198);">
+            <option value="preventive" selected><p class="op">Preventive Maintenance Service </p></option>
+            <option value="body"><p class="op">Body Repair Service</p></option>
+            <option value="carcare"><p class="op">Car Care Service</p></option>                
+        </select>
+        <input class="frm" list="Car" placeholder="Car Type" style="background-color: rgb(186, 186, 198);">
+            <datalist id="Car">
+            <option value="m" selected>Mahindra</option>
+            <option value="h">Honda</option>
+            <option value="hy">Hyundai</option>
+            <option value="f">Ford</option>  
+            <option value="t">Toyota</option>
+            <option value="n">Nissan</option>       
+        </datalist>
+        <input class="frm" type="text" id="cml" required placeholder="Car-Model" style="background-color: rgb(186, 186, 198);">
+        <label for="flt">Fuel type:</label>
+        <input type="radio" name="flt" value="Petrol" style="background-color: rgb(186, 186, 198);">Petrol
+            <input  type="radio" name="flt" value="Diesel">Diesel
+            <input  type="radio" name="flt" value="LPG">LPG
+            <input  type="radio" name="flt" value="Others">Others<br><br>
+        <input class="frm" type="number" placeholder="Kilometers Run:" style="background-color: rgb(186, 186, 198);">
+        <input  type="submit" value="Schedule an Appointment" formaction="appointment.html" onsubmit="POST">
+        </div>
+    </form>
+    </div>
+</div>
+<div class="box2" style="background-image: url(Images/booking.jpg);"><div class="b2"></div></div>
+<footer>Copyright 2023 AutoMob-Mechanic.All Rights Reserved</footer>
+</body>
+</html>
